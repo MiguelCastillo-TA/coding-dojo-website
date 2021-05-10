@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- 
+    El propósito de está línea es decirle al navegador que queremos que nuestro documento sea leído en modo estándar
+    esta línea debe ser la primera en cada documento de HTML que crees
+-->
+<html lang="en">
+      <!--indica que empezaremos a hablar sobre las propiedades del documento-->
+    <head>
+        <!-- declaran la codificación a un navegador -->
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Las metaetiquetas hacen a tu página web más relevante para los motores de búsqueda como Google. -->
+        <meta name="descriptioncopy" content="Las metaetiquetas hacen a tu página web más relevante para los motores de búsqueda como Google." >
+        <!-- Esta línea enlaza una stylesheet a nuestra página -->
+        <link rel="stylesheet" href="static/css/final_style.css">
+        <!-- Esta línea enlaza un archivo JavaScript o jQuery a nuestro documento. -->
+        <script src="https://use.fontawesome.com/bedd3f5c75.js"></script>
+        <!-- Este es el título de tu página web. la pestaña que se abre leerá “Document” -->
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- incorporará el contenido del usuario (todo lo que esté en el documento y que será visible en la ventana del navegador) -->
+        <div class="header-wrapper">
+            <img id="logo-img" src="/static/images/coding-dojo-logo.png" alt="coding dojo logo">
+            <ul>
+                <li>
+                    <!-- que hace <strong> ? -->
+                    <strong>Dashboard</strong>
+                </li>
+                <li>
+                    Checklist
+                </li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">
+                    <!-- que es <i> ? google fontawesome y ve linea 8 -->
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="name-wrp">
+                <img src="/static/images/profile_pic.png" alt="profile pic icon">
+                <p>
+                    <i>Hello,</i>
+                    <strong>Miguel C</strong>
+                </p>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <section class="left-content-wrp">
+                <img class="left-upper-img" src="/static/images/welcome.png" alt="welcome-image">
+                <img class="left-profile-pic" src="/static/images/profile_pic.png" alt="profile-pic-med">
+                <p>Miguel Castillo</p>
+                <div class="certificates-grid">
+                    <div class="cert-info">
+                        <img src="/static/images/yellow_belt_gray.png" alt="">
+                        <p class="cert-title">
+                            webfun belt
+                        </p>
+                    </div>
+                    <div class="cert-info">
+                        <img src="/static/images/lamp_gray.png" alt="">
+                        <p class="cert-title">
+                            lamp belt
+                        </p>
+                    </div>
+                    <div class="cert-info">
+                        <img src="/static/images/mean_gray.png" alt="">
+                        <p class="cert-title">
+                            mean belt
+                        </p>
+                    </div>
+                    <div class="cert-info">
+                        <img src="/static/images/rails_gray.png" alt="">
+                        <p class="cert-title">
+                            rails belt
+                        </p>
+                    </div>
+                    <div class="cert-info">
+                        <img src="/static/images/ios_gray.png" alt="">
+                        <p class="cert-title">
+                            ios belt
+                        </p>
+                    </div>
+                    <div class="cert-info">
+                        <img src="/static/images/python_gray.png" alt="">
+                        <p class="cert-title">
+                            python belt
+                        </p>
+                    </div>
+                    <div class="cert-info">
+                        <img src="/static/images/net_gray.png" alt="">
+                        <p class="cert-title">
+                            c#/.net belt
+                        </p>
+                    </div>
+                    <div class="cert-info">
+                        <img src="/static/images/java_belt_gray.png" alt="">
+                        <p class="cert-title">
+                            java belt
+                        </p>
+                    </div>
+                    <div class="cert-info">
+                        <img src="/static/images/mern_belt_gray.png" alt="">
+                        <p class="cert-title">
+                            mern belt
+                        </p>
+                    </div>
+                    <div class="cert-info">
+                        <img src="http://learn.codingdojo.com/assets/achievements/programming_basics_belt_gray.svg" alt="">
+                        <p class="cert-title">
+                            programming basics belt
+                        </p>
+                    </div>
+                    <div class="cert-info">
+                        <img src="http://learn.codingdojo.com/assets/achievements/blockchain.svg" alt="">
+                        <p class="cert-title">
+                            blockchain fundamentals belt
+                        </p>
+                    </div>
+                    <div class="cert-info">
+                        <img src="http://learn.codingdojo.com/assets/achievements/blockchain.svg" alt="">
+                        <p class="cert-title">
+                            blockchain practicals belt
+                        </p>
+                    </div>
+                </div>
+                <ul class="tips">
+                    <li>
+                        daily tips
+                    </li>
+                    <li>no tip found!</li>
+                </ul>
+            </section>
+            <section class="right-content-wrp">
+                <div class="right-content-header">
+                    <h3>tracks</h3>
+                    <a href="">continue</a>
+                </div>
+                <ul class="track-list-wrp">
+                    <li>
+                        <p class="track-title">Pre-Bootcamp</p>
+                        <ul class="tracks-apps-list">
+                            <li>
+                                <img src="/static/images/algoapp.png" class="app-icon" alt="algoapp-icon">
+                                <p>AlgoApp</p>
+                            </li>
+                            <li>
+                                <img src="/static/images/backpack.png" class="app-icon" alt="starthere-icon">
+                                <p>Start Here</p>
+                            </li>
+                            <li>
+                                <img src="static/images/tags.png" class="app-icon" alt="tags-icon">
+                                <p>Introduction</p>
+                            </li>
+                            <li>
+                                <img src="static/images/videos.png" class="app-icon" alt="video-tags-icon">
+                                <p>Introduction</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="track-title">Pre-Bootcamp Full-Time Online</p>
+                        <ul class="tracks-apps-list">
+                            <li>
+                                <img src="/static/images/algoapp.png" class="app-icon" alt="algoapp-icon">
+                                <p>AlgoApp</p>
+                            </li>
+                            <li>
+                                <img src="/static/images/backpack.png" class="app-icon" alt="starthere-icon">
+                                <p>Start Here</p>
+                            </li>
+                            <li>
+                                <img src="static/images/tags.png" class="app-icon" alt="tags-icon">
+                                <p>Introduction</p>
+                            </li>
+                            <li>
+                                <img src="static/images/videos.png" class="app-icon" alt="video-tags-icon">
+                                <p>Introduction</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="track-title">Pre-Bootcamp Data Science</p>
+                        <ul class="tracks-apps-list">
+                            <li>
+                                <img src="/static/images/algoapp.png" class="app-icon" alt="algoapp-icon">
+                                <p>AlgoApp</p>
+                            </li>
+                            <li>
+                                <img src="/static/images/backpack.png" class="app-icon" alt="starthere-icon">
+                                <p>Start Here</p>
+                            </li>
+                            <li>
+                                <img src="static/images/tags.png" class="app-icon" alt="tags-icon">
+                                <p>Introduction</p>
+                            </li>
+                            <li>
+                                <img src="static/images/videos.png" class="app-icon" alt="video-tags-icon">
+                                <p>Introduction</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="track-title">Chicago Codes Pre-Bootcamp</p>
+                        <ul class="tracks-apps-list">
+                            <li>
+                                <img src="/static/images/algoapp.png" class="app-icon" alt="algoapp-icon">
+                                <p>AlgoApp</p>
+                            </li>
+                            <li>
+                                <img src="/static/images/backpack.png" class="app-icon" alt="starthere-icon">
+                                <p>Start Here</p>
+                            </li>
+                            <li>
+                                <img src="static/images/tags.png" class="app-icon" alt="tags-icon">
+                                <p>Introduction</p>
+                            </li>
+                            <li>
+                                <img src="static/images/videos.png" class="app-icon" alt="video-tags-icon">
+                                <p>Introduction</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </body>
+</html>

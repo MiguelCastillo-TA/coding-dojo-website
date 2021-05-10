@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* borra o cambia este style */
+    font-family: "helvetica neue", arial, verdana, sans-serif;
+}
+body{
+
+    height: 100vh; /* borra o cambia este style */
+    width: 100vw; /* borra o cambia este style */
+}
+
+/************************************************ Header section *****/
+.header-wrapper{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row; /* cambia este style a 'column'. que hace?*/
+    height: 4.5%;
+    width: 100%;
+    height: 4.5%;
+    padding-top: 6px;
+    background: #3F4B5B;
+    font-size: 1rem;
+    color: rgb(255, 255, 255); /* cual text see cambia si cambias este style?*/
+}
+#logo-img{
+    height: 100%;
+    padding-bottom: 5px; /* abreviatura para definir el relleno para la parte de padding: top right bottom left*/
+    margin-left: 3%;
+    margin-right: 3%;
+    /* background: red;  */
+}
+/* esto dice que vamos ha aplicar este style a TODOS los <ul> dentro del <div class="header-wrapper"> */
+.header-wrapper ul{
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    margin-right: 1.5%;
+    padding-top: 5px;
+    /* background: greenyellow; */
+}
+/* este style se va aplicar ha los <li> dentro de <ul> dentro de <div class="header-wrapper">*/
+.header-wrapper ul li{
+    display: inline-block;
+    margin-right: 5%;
+}
+/* search bar */
+.search-bar{
+    display: inline-block; /* que pasa si comenta esta línea? */
+    width: 20%;
+    height: 100%;
+    padding-bottom: 5px;
+    margin-right: 1%;
+    margin-left: 28%;
+    /* background: gray; */
+}
+.search-bar input{
+    height: 100%;
+    width: 80%;
+    border-radius: none;
+}
+.search-bar button{
+    width: 16%;
+    border: none;
+    background: none;
+    color: #fff;
+    /* background: pink; */
+}
+/* name with profile pic icon */
+.name-wrp{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 12%; 
+    padding: 2px;
+    /* background: teal; */
+}
+.name-wrp img{
+    display: inline-block; 
+    border-radius: 100%;
+    margin-right: 15px;
+}
+/***************************************** content wrapper *****/
+.content-wrapper{
+    height: 90%;
+    width: 100%;
+    padding: 4% 7% 0 7%;
+    display: flex;
+    flex-direction: row;
+    background: #F2F4F8;
+}
+/*************** left content section */
+.left-content-wrp{
+    height: 93%;
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.158) ;
+}
+
+/* upper background image */
+.left-upper-img{
+    height: 20%;
+    width: 100%;
+}
+/**** profile pic */
+.left-profile-pic{
+    height: 16%;
+    width: 23%;
+    margin-left: 37.5%;
+    border-radius: 100%;
+    border: 4px solid rgba(128, 128, 128, 0.459);
+    margin-top: -60px;
+    z-index: 2;
+}
+.left-content-wrp > p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 3px;
+    width: 100%;
+}
+/* certifications small divs*/
+.certificates-grid{
+
+    height: 55%;
+    width: 100%;
+    display: grid; /* esto es un nuevo display*/ 
+    grid-template-columns: 33.33% 33.33% 33.33%;/*Experimente cambiando los valores de estos*/
+    grid-template-rows: 25% 25% 25% 25%;/*Experimente cambiando los valores de estos*/
+    /* background: red; */
+}
+.cert-info{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+.cert-info img{
+    /* si sabes el padding que qiueres para cada lado */
+    /* puedes pasar todos los valores. se aplican asi: */
+    /* padding: top right bottom left */
+    padding: 5px 35px 5px 35px;    /* Crees que hay una forma más corta de escribir esto? */
+    height: 70%;
+    /* background: aquamarine;  */
+}
+.cert-info p{
+    text-align:center;
+    font-size: .6rem;
+    font-weight: bold;
+    text-transform: uppercase; /* borrar o cambia este style*/
+    color: gray;
+}
+
+.tips{
+    width: 100%;
+    height: 20%;
+    background: rgb(52, 179, 211);
+}
+.tips li{
+    display: inline-block; /* que pasa si comenta esto? */
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.tips li:nth-child(1){
+    border-bottom: 2px solid #fff;
+}
+/* que hace :nth-child()? */
+.tips li:nth-child(1){
+    text-transform: uppercase;
+}
+.tips li:nth-child(2){
+    text-transform: capitalize;
+}
+/*************** right content section */
+.right-content-wrp{
+    height:93%;
+    width: 60%;
+    margin-left: 3%;
+    background: #F2F4F8;
+}
+.right-content-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 7%;
+    /* background: darkolivegreen; */
+}
+.right-content-header h3{
+    text-transform: capitalize;
+    text-align: center;
+    width: 12%;
+    color: #009BC7;
+    border-top: 3px solid #009BC7;
+    background: #fff;
+}
+.right-content-header a {
+    display: inline-block;
+    height: 70%;
+    width: 28%;
+    margin-top: 5px;
+    margin-left: 55%;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    background: #009BC7;
+    text-transform: capitalize;
+}
+/* track list */
+.track-list-wrp{
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    background: #fff;
+}
+.track-list-wrp > li {
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 3px;
+    /* background: blueviolet; */
+}
+.track-title{
+    max-width: 40%;
+    height: 20%;
+    text-align: center;
+    padding-top: 4px;
+    background: #00AEDC;
+}
+.tracks-apps-list{
+    height: 80%;
+    width: 100%;
+    background: #F8F9FC;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.tracks-apps-list li{
+    display: flex; 
+    flex-direction: column;
+    width: 12%;
+    margin: 0 5px;
+}
+.app-icon{
+    height: 80%;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 25%;
+}
+.tracks-apps-list li p {
+    text-align: center;
+    font-size: 12px;
+    color: #838383;
+}
